@@ -1,0 +1,156 @@
+:root{
+      --bg: #0b0f14;
+      --bg-elev: #0f1520;
+      --card: #121a26;
+      --text: #e6f0ff;
+      --muted: #9ab0c6;
+      --accent: #0ea5e9; /* cyan-500 */
+      --accent-2:#38bdf8;
+      --ring: rgba(14,165,233,0.35);
+      --success:#22c55e;
+      --danger:#ef4444;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    .light{
+      --bg: #f8fafc;
+      --bg-elev:#ffffff;
+      --card: #ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --accent:#0ea5e9;
+      --accent-2:#0284c7;
+      --ring: rgba(14,165,233,0.35);
+      --shadow: 0 10px 30px rgba(2,8,23,.08);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 80% -10%, rgba(14,165,233,.08), transparent), var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--accent); text-decoration:none}
+    .container{width:min(1100px, 92vw); margin-inline:auto}
+
+    /* Navbar */
+    .navbar{
+      position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(8px);
+      background: color-mix(in oklab, var(--bg-elev) 85%, transparent);
+      border-bottom:1px solid color-mix(in oklab, var(--bg-elev) 75%, transparent);
+    }
+    .nav-inner{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 0}
+    .brand{display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:.5px}
+    .brand-badge{width:36px; height:36px; border-radius:12px; display:grid; place-items:center; background:linear-gradient(135deg, var(--accent), var(--accent-2)); color:white; box-shadow: var(--shadow)}
+    .nav-links{display:flex; gap:18px; align-items:center}
+    .nav-links a{color:var(--text); opacity:.85}
+    .nav-links a.active{color:var(--accent); font-weight:600}
+    .nav-cta{display:flex; gap:10px; align-items:center}
+    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; border:1px solid color-mix(in oklab, var(--accent) 40%, transparent); background: color-mix(in oklab, var(--bg-elev) 95%, transparent); color:var(--text); box-shadow:none; transition: transform .15s ease, box-shadow .2s ease, background .2s ease; cursor:pointer}
+    .btn:hover{transform: translateY(-1px); box-shadow: var(--shadow)}
+    .btn.accent{background: linear-gradient(135deg, var(--accent), var(--accent-2)); color:white; border-color:transparent}
+    .icon{width:18px; height:18px; display:inline-block}
+    .hamburger{display:none; border:1px solid color-mix(in oklab, var(--text) 12%, transparent); background:transparent}
+
+    /* Mobile menu */
+    /* Mobile Menu Dropdown */
+.mobile-menu {
+  position: absolute;
+  top: 60px; /* navbar height ke neeche */
+  right: 1rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 200px;
+  display: none;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.mobile-menu a:hover {
+  background: #f3f4f6;
+}
+
+/* Show menu when active */
+.mobile-menu.active {
+  display: flex;
+}
+
+
+    /* Hero */
+    header.hero{position:relative; isolation:isolate; padding:72px 0 40px 0}
+    .hero-grid{display:grid; grid-template-columns: 1.2fr 1fr; gap:32px; align-items:center}
+    .kicker{font-size:.9rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase}
+    h1{font-size:clamp(2rem, 5vw, 3.2rem); line-height:1.15; margin:10px 0 12px}
+    .subtitle{font-size:1.05rem; color:var(--muted)}
+    .hero-cta{display:flex; gap:12px; margin-top:18px}
+    .hero-card{background:linear-gradient(180deg, color-mix(in oklab, var(--card) 92%, transparent), color-mix(in oklab, var(--card) 98%, transparent)); border:1px solid color-mix(in oklab, var(--text) 8%, transparent); border-radius:20px; padding:22px; box-shadow: var(--shadow)}
+    .hero-badges{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px}
+    .chip{padding:6px 10px; border-radius:999px; border:1px solid color-mix(in oklab, var(--text) 12%, transparent); color:var(--muted); font-size:.85rem}
+    .typing{min-height:1.6em; border-right:2px solid var(--accent); white-space:nowrap; overflow:hidden}
+
+    /* Sections */
+    section{padding:64px 0}
+    .section-head{display:flex; align-items:end; justify-content:space-between; gap:16px; margin-bottom:24px}
+    .section-head h2{margin:0; font-size:clamp(1.4rem, 3.2vw, 2rem)}
+    .section-desc{color:var(--muted)}
+
+    /* Cards & grids */
+    .grid{display:grid; gap:18px}
+    .grid.cols-3{grid-template-columns: repeat(3, 1fr)}
+    .grid.cols-2{grid-template-columns: repeat(2, 1fr)}
+    .card{border:1px solid color-mix(in oklab, var(--text) 8%, transparent); background: color-mix(in oklab, var(--card) 96%, transparent); border-radius:18px; overflow:hidden; box-shadow: var(--shadow); transition: transform .18s ease, box-shadow .25s ease}
+    .card:hover{transform: translateY(-4px); box-shadow: 0 15px 45px rgba(0,0,0,.35)}
+    .card .p{padding:16px 18px}
+    .card-media{aspect-ratio: 16/9; background: radial-gradient(180px 120px at 30% 20%, color-mix(in oklab, var(--accent) 45%, transparent), transparent), linear-gradient(145deg, color-mix(in oklab, var(--bg-elev) 70%, transparent), color-mix(in oklab, var(--card) 95%, transparent)); display:grid; place-items:center; color:color-mix(in oklab, var(--text) 50%, transparent); font-size:1.1rem}
+
+    /* Filters */
+    .filters{display:flex; gap:10px; flex-wrap:wrap}
+    .filter-btn{padding:8px 12px; border-radius:12px; border:1px solid color-mix(in oklab, var(--text) 10%, transparent); background:transparent; color:var(--text); cursor:pointer}
+    .filter-btn.active{background: linear-gradient(135deg, var(--accent), var(--accent-2)); border-color:transparent}
+
+    /* Timeline (Resume) */
+    .timeline{position:relative; margin-left:12px}
+    .timeline:before{content:""; position:absolute; left:10px; top:0; bottom:0; width:2px; background: color-mix(in oklab, var(--text) 12%, transparent)}
+    .t-item{position:relative; padding-left:28px; margin:0 0 18px}
+    .t-item:before{content:""; position:absolute; left:2px; top:.35rem; width:16px; height:16px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 4px color-mix(in oklab, var(--accent) 25%, transparent)}
+    .t-title{font-weight:600}
+    .t-meta{color:var(--muted); font-size:.9rem}
+
+    /* Contact */
+    form{display:grid; gap:12px}
+    input, textarea{width:100%; padding:12px 14px; border-radius:12px; border:1px solid color-mix(in oklab, var(--text) 12%, transparent); background: color-mix(in oklab, var(--bg-elev) 96%, transparent); color:var(--text); outline:none; transition: box-shadow .15s ease, border-color .15s ease}
+    input:focus, textarea:focus{box-shadow:0 0 0 6px var(--ring); border-color: var(--accent)}
+    textarea{min-height:140px; resize:vertical}
+
+    /* Footer */
+    footer{padding:36px 0; border-top:1px solid color-mix(in oklab, var(--text) 10%, transparent); color:var(--muted)}
+    .socials{display:flex; gap:12px}
+
+    /* Reveal on scroll */
+    .reveal{opacity:0; transform: translateY(16px); transition: opacity .5s ease, transform .5s ease}
+    .reveal.in-view{opacity:1; transform:none}
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .hero-grid{grid-template-columns: 1fr}
+    }
+    @media (max-width: 780px){
+      .nav-links{display:none}
+      .hamburger{display:inline-flex; align-items:center; justify-content:center; padding:10px 12px; border-radius:12px}
+      
+      .grid.cols-3{grid-template-columns: 1fr}
+      .grid.cols-2{grid-template-columns: 1fr}
+    .social-icons{display:flex; gap:16px; font-size:1.6rem}
+.social-icons a{color:var(--text); transition:color .2s ease}
+.social-icons a:hover{color:var(--accent)}

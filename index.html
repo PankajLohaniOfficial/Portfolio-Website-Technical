@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0ea5e9" />
+    <title>Pankaj Lohani · Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <div class="brand">
+          <div class="brand-badge" aria-hidden="true">PL</div>
+          <span>Pankaj Lohani</span>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#resume" class="nav-link">Resume</a>
+          <a href="#blog" class="nav-link">Blog</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-cta">
+          <button
+            class="btn"
+            id="themeToggle"
+            title="Toggle theme"
+            aria-label="Toggle dark/light mode"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <span>Theme</span>
+          </button>
+          <a class="btn accent" href="#resume"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 5v14M5 12h14" /></svg
+            >Resume</a
+          >
+          <button
+            class="btn hamburger"
+            id="hamburger"
+            aria-label="Open menu"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="container mobile-menu" id="mobileMenu" hidden>
+        <a href="#home" class="m-link">Home</a>
+        <a href="#about" class="m-link">About</a>
+        <a href="#projects" class="m-link">Projects</a>
+        <a href="#resume" class="m-link">Resume</a>
+        <a href="#blog" class="m-link">Blog</a>
+        <a href="#contact" class="m-link">Contact</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" class="hero container">
+      <div class="hero-grid">
+        <div>
+          <div class="kicker">Hello, I'm</div>
+          <h1>Pankaj Lohani</h1>
+          <p class="subtitle">
+            <span id="typing" class="typing" aria-live="polite"></span>
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn accent">View Projects</a>
+            <a href="#contact" class="btn">Contact Me</a>
+          </div>
+          <div class="hero-badges">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">React</span>
+            <span class="chip">Tailwind</span>
+            <span class="chip">Bootstrap</span>
+            <span class="chip">Python</span>
+            <span class="chip">Flask</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Scikit-learn</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3 style="margin: 0 0 8px">About me</h3>
+          <p style="margin: 0; color: var(--muted)">
+            I am an enthusiastic Web Developer and Data Analysis beginner with a
+            passion for learning and building impactful projects...
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="container reveal">
+      <div class="section-head">
+        <h2>About Me</h2>
+        <p class="section-desc">Who I am and what I love building.</p>
+      </div>
+      <div class="grid cols-2">
+        <div class="card">
+          <div class="p">
+            <h3>Developer & Learner</h3>
+            <p>
+              I enjoy crafting clean, accessible UIs and practical data tools.
+              My focus areas are front‑end engineering (React/JS), rapid
+              prototyping with Python/Flask, and exploring machine learning for
+              real‑world use‑cases.
+            </p>
+            <ul style="margin: 0; padding-left: 18px; color: var(--muted)">
+              <li>Clean code, clear UX, measurable impact</li>
+              <li>Teamwork, communication, and continuous learning</li>
+              <li>Open to internships, freelance, and collabs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="p">
+            <h3>Core Skills</h3>
+            <div class="hero-badges">
+              <span class="chip">Semantic HTML5</span>
+              <span class="chip">Modern CSS</span>
+              <span class="chip">Responsive UI</span>
+              <span class="chip">React</span>
+              <span class="chip">REST APIs</span>
+              <span class="chip">Python + Flask</span>
+              <span class="chip">SQL</span>
+              <span class="chip">ML Basics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container reveal">
+      <div class="section-head">
+        <div>
+          <h2>Projects</h2>
+          <p class="section-desc">A selection of things I’ve built recently.</p>
+        </div>
+        <div class="filters" role="toolbar" aria-label="Project filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="data">Data</button>
+          <button class="filter-btn" data-filter="ml">ML</button>
+          <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+      </div>
+
+      <div class="grid cols-3" id="projectGrid">
+        <!-- Card 1 -->
+        <article class="card project" data-cat="web">
+          <div class="card-media">Responsive Portfolio Template</div>
+          <div class="p">
+            <h3 style="margin: 0.2rem 0">Dev Portfolio Starter</h3>
+            <p class="section-desc">
+              A sleek, responsive portfolio starter with dark mode and
+              animations.
+            </p>
+            <div class="hero-badges">
+              <span class="chip">HTML</span><span class="chip">CSS</span
+              ><span class="chip">JS</span>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 12px">
+              <a class="btn" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card project" data-cat="data">
+          <div class="card-media">Sales Dashboard</div>
+          <div class="p">
+            <h3 style="margin: 0.2rem 0">Interactive Data Dashboard</h3>
+            <p class="section-desc">
+              A browser‑based dashboard with charts and filters from CSV input.
+            </p>
+            <div class="hero-badges">
+              <span class="chip">Python</span><span class="chip">Flask</span
+              ><span class="chip">Charts</span>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 12px">
+              <a class="btn" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card project" data-cat="ml">
+          <div class="card-media">ML Classifier</div>
+          <div class="p">
+            <h3 style="margin: 0.2rem 0">Sentiment Classifier</h3>
+            <p class="section-desc">
+              Simple scikit‑learn pipeline with web UI to test predictions.
+            </p>
+            <div class="hero-badges">
+              <span class="chip">Python</span
+              ><span class="chip">scikit‑learn</span
+              ><span class="chip">Flask</span>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 12px">
+              <a class="btn" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 4
+        <article class="card project" data-cat="web">
+          <div class="card-media">Landing Page</div>
+          <div class="p">
+            <h3 style="margin: 0.2rem 0">Product Landing</h3>
+            <p class="section-desc">
+              Conversion‑focused landing with A/B friendly sections.
+            </p>
+            <div class="hero-badges">
+              <span class="chip">HTML</span><span class="chip">CSS</span>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 12px">
+              <a class="btn" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="card project" data-cat="other">
+          <div class="card-media">CLI Tool</div>
+          <div class="p">
+            <h3 style="margin: 0.2rem 0">Automation Scripts</h3>
+            <p class="section-desc">
+              Handy scripts to speed up repetitive dev tasks.
+            </p>
+            <div class="hero-badges">
+              <span class="chip">Node</span><span class="chip">Python</span>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 12px">
+              <a class="btn" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
+        <
+        
+
+
+
+
+        
+        <article class="card project" data-cat="data">
+          <div class="card-media">ETL Mini</div>
+          <div class="p">
+            <h3 style="margin: 0.2rem 0">ETL & Cleaning</h3>
+            <p class="section-desc">
+              Data cleaning utilities and small ETL experiments.
+            </p>
+            <div class="hero-badges">
+              <span class="chip">Python</span><span class="chip">Pandas</span>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 12px">
+              <a class="btn" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </article> -->
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="container reveal">
+      <div class="section-head">
+        <h2>Resume</h2>
+        <a
+          class="btn accent"
+          href="./Pankaj_Lohani_Resume_For_Tech.pdf"
+          download
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <path d="M7 10l5 5 5-5" />
+            <path d="M12 15V3" />
+          </svg>
+          Download PDF
+        </a>
+      </div>
+      <div class="grid cols-2">
+        <div class="card">
+          <div class="p">
+            <h3>Education</h3>
+            <div class="timeline">
+              <div class="t-item">
+                <div class="t-title">Graphic Era Hill University, Bhimtal</div>
+                <div class="t-meta">B.Tech CSE (2022 – 2026)</div>
+              </div>
+              <div class="t-item">
+                <div class="t-title">
+                  D.A.V Centenary Public School, Haldwani
+                </div>
+                <div class="t-meta">Intermediate (2021 – 2022)</div>
+              </div>
+              <div class="t-item">
+                <div class="t-title">
+                  D.A.V Centenary Public School, Haldwani
+                </div>
+                <div class="t-meta">Matriculation (2019 – 2020)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="p">
+            <h3>Technical Skills</h3>
+            <ul style="margin: 0; padding-left: 18px">
+              <li>Programming: Python, HTML5, CSS3, JavaScript ES6+</li>
+              <li>Frontend: Bootstrap 5, React.js, Tailwind CSS</li>
+              <li>
+                Tools: VS Code, Vite, GitHub, Figma, Jupyter, MS Excel,
+                Powerpoint
+              </li>
+              <li>Data Handling: NumPy, Pandas</li>
+              <li>Databases: MySQL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="container reveal">
+      <div class="section-head">
+        <h2>Blog</h2>
+        <p class="section-desc">Thoughts on web dev, data, and learning.</p>
+      </div>
+      <div class="grid cols-3" id="blogGrid">
+        <article class="card">
+          <div class="card-media">Frontend Notes</div>
+          <div class="p">
+            <h3 style="margin: 0.2rem 0">Designing Accessible UI Components</h3>
+            <p class="section-desc">
+              A quick checklist to make components more inclusive and robust.
+            </p>
+            <a class="btn" href="#">Read</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-media">Data Journal</div>
+          <div class="p">
+            <h3 style="margin: 0.2rem 0">From CSV to Insights</h3>
+            <p class="section-desc">
+              My process for cleaning, visualizing, and communicating findings.
+            </p>
+            <a class="btn" href="#">Read</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-media">Career</div>
+          <div class="p">
+            <h3 style="margin: 0.2rem 0">What I’m Learning This Month</h3>
+            <p class="section-desc">
+              Topics and resources I’m exploring to level up as a developer.
+            </p>
+            <a class="btn" href="#">Read</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container reveal">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="section-desc">Have a project, role, or idea? Let’s talk.</p>
+      </div>
+      <div class="grid cols-2">
+        <div class="card">
+          <div class="p">
+            <h3>Send a Message</h3>
+            <form id="contactForm" novalidate>
+              <div>
+                <label for="name" style="display: block; margin-bottom: 6px"
+                  >Name</label
+                >
+                <input id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div>
+                <label for="email" style="display: block; margin-bottom: 6px"
+                  >Email</label
+                >
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="message" style="display: block; margin-bottom: 6px"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+              <div style="display: flex; gap: 10px; align-items: center">
+                <button class="btn accent" type="submit">Send</button>
+                <a class="btn" href="mailto:pankajlohanioff@gmail.com"
+                  >Email directly</a
+                >
+              </div>
+              <p
+                id="formAlert"
+                style="margin: 8px 0 0; font-size: 0.95rem; display: none"
+              ></p>
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="p">
+            <h3>Elsewhere</h3>
+            <p class="section-desc">Find me on the platforms below:</p>
+            <div class="hero-badges">
+              <a
+                class="chip"
+                href="github.com/pankajlohaniofficial"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
+              <a
+                class="chip"
+                href="https://www.linkedin.com/in/pankaj-lohani-/"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn</a
+              >
+              <a
+                class="chip"
+                href="https://www.instagram.com/pankajlohani_2020/"
+                target="_blank"
+                rel="noreferrer"
+                >Instagram</a
+              >
+              <a
+                class="chip"
+                href="https://leetcode.com/u/PankajLohani_3/"
+                target="_blank"
+                rel="noreferrer"
+                >LeetCode</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 16px;
+          flex-wrap: wrap;
+        "
+      >
+        <div>
+          © 2025 <span id="year"></span> Pankaj Lohani. All rights reserved.
+        </div>
+        <div class="socials">
+          <a
+            href="https://www.github.com/pankajlohaniofficial"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 .5a12 12 0 0 0-3.79 23.4c.6.12.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.54-1.37-1.33-1.74-1.33-1.74-1.09-.75.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.82 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.23-3.23-.12-.3-.53-1.52.12-3.16 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.64.24 2.86.12 3.16.77.85 1.23 1.92 1.23 3.23 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .5Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/pankaj-lohani-/"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+          >
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4.1 0 4.8 2.7 4.8 6.2V24h-4v-7.2c0-1.7 0-3.8-2.3-3.8s-2.6 1.8-2.6 3.7V24h-3.8V8z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS File -->
+    <script src="script.js"></script>
+  </body>
+</html>
